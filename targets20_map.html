@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_06aa5dcf65af5da936ace96d0a13bf5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_06aa5dcf65af5da936ace96d0a13bf5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_06aa5dcf65af5da936ace96d0a13bf5f = L.map(
+                "map_06aa5dcf65af5da936ace96d0a13bf5f",
+                {
+                    center: [37.613400539413426, -86.95582762366216],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68d1274b6276014b5aad6ec8686fd5c7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_68d1274b6276014b5aad6ec8686fd5c7.addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_63127228ec1c166fa0e79cab40c8e546 = L.marker(
+                [29.358911265002423, -100.77656868794708],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_dc02c0a56b847d430776245de5ab3d41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84ac935e9951bea2522e4e18b93e6146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1cb0976121ed93af49354d6628bb467 = $(`<div id="html_c1cb0976121ed93af49354d6628bb467" style="width: 100.0%; height: 100.0%;">Laughlin AFB</div>`)[0];
+                popup_84ac935e9951bea2522e4e18b93e6146.setContent(html_c1cb0976121ed93af49354d6628bb467);
+            
+        
+
+        marker_63127228ec1c166fa0e79cab40c8e546.bindPopup(popup_84ac935e9951bea2522e4e18b93e6146)
+        ;
+
+        
+    
+    
+            marker_63127228ec1c166fa0e79cab40c8e546.bindTooltip(
+                `<div>
+                     Laughlin AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63127228ec1c166fa0e79cab40c8e546.setIcon(icon_dc02c0a56b847d430776245de5ab3d41);
+            
+    
+            var marker_e7a460204cd5aa5550638c6ce3ba16f8 = L.marker(
+                [32.41460064659892, -99.84751125017776],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_9570b506d8c92398cc16a14605afc342 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0cd006aea30045cfc7b5cc934dc064e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7b738cbe2620c17b568d7398495069b = $(`<div id="html_f7b738cbe2620c17b568d7398495069b" style="width: 100.0%; height: 100.0%;">Dyess AFB</div>`)[0];
+                popup_c0cd006aea30045cfc7b5cc934dc064e.setContent(html_f7b738cbe2620c17b568d7398495069b);
+            
+        
+
+        marker_e7a460204cd5aa5550638c6ce3ba16f8.bindPopup(popup_c0cd006aea30045cfc7b5cc934dc064e)
+        ;
+
+        
+    
+    
+            marker_e7a460204cd5aa5550638c6ce3ba16f8.bindTooltip(
+                `<div>
+                     Dyess AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7a460204cd5aa5550638c6ce3ba16f8.setIcon(icon_9570b506d8c92398cc16a14605afc342);
+            
+    
+            var marker_11e94469795e47086009a8b26d3c21c4 = L.marker(
+                [35.04754157189825, -106.5900932550529],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_297138de93320c2540b0847ff652160c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf67837fc4a2b0e974849ef1050a4c25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e58cac84b4c85393ab6a0e4ec26933bd = $(`<div id="html_e58cac84b4c85393ab6a0e4ec26933bd" style="width: 100.0%; height: 100.0%;">Kirtland AFB (Albuquerque)</div>`)[0];
+                popup_bf67837fc4a2b0e974849ef1050a4c25.setContent(html_e58cac84b4c85393ab6a0e4ec26933bd);
+            
+        
+
+        marker_11e94469795e47086009a8b26d3c21c4.bindPopup(popup_bf67837fc4a2b0e974849ef1050a4c25)
+        ;
+
+        
+    
+    
+            marker_11e94469795e47086009a8b26d3c21c4.bindTooltip(
+                `<div>
+                     Kirtland AFB (Albuquerque)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11e94469795e47086009a8b26d3c21c4.setIcon(icon_297138de93320c2540b0847ff652160c);
+            
+    
+            var marker_1da06db003994c7dcfde8e1593b84f82 = L.marker(
+                [41.11327450079742, -95.90614532340598],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_614c8d12164673272d39d04b08c2daeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2412b834e19ee4fcc83a3fc03f8cab7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b121e50b029e3a44699f619a0cdbccf = $(`<div id="html_3b121e50b029e3a44699f619a0cdbccf" style="width: 100.0%; height: 100.0%;">Offutt AFB</div>`)[0];
+                popup_2412b834e19ee4fcc83a3fc03f8cab7f.setContent(html_3b121e50b029e3a44699f619a0cdbccf);
+            
+        
+
+        marker_1da06db003994c7dcfde8e1593b84f82.bindPopup(popup_2412b834e19ee4fcc83a3fc03f8cab7f)
+        ;
+
+        
+    
+    
+            marker_1da06db003994c7dcfde8e1593b84f82.bindTooltip(
+                `<div>
+                     Offutt AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1da06db003994c7dcfde8e1593b84f82.setIcon(icon_614c8d12164673272d39d04b08c2daeb);
+            
+    
+            var marker_3d0cb865b3631e4fe769e49e06934e2b = L.marker(
+                [40.02549636167609, -74.5911128947759],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_4413ea9ef5fbacef7fbef030c1d4c315 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30845eb6575c311af8c0f75f09047842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_003661809068c55a2e379b0b0652b0e9 = $(`<div id="html_003661809068c55a2e379b0b0652b0e9" style="width: 100.0%; height: 100.0%;">McGuire AFB</div>`)[0];
+                popup_30845eb6575c311af8c0f75f09047842.setContent(html_003661809068c55a2e379b0b0652b0e9);
+            
+        
+
+        marker_3d0cb865b3631e4fe769e49e06934e2b.bindPopup(popup_30845eb6575c311af8c0f75f09047842)
+        ;
+
+        
+    
+    
+            marker_3d0cb865b3631e4fe769e49e06934e2b.bindTooltip(
+                `<div>
+                     McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d0cb865b3631e4fe769e49e06934e2b.setIcon(icon_4413ea9ef5fbacef7fbef030c1d4c315);
+            
+    
+            var marker_85636f218d2460a6eb532b3370cd6685 = L.marker(
+                [21.329445036527282, -157.94100583069982],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var icon_a9931c24c3bbc59929dcd805310943fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebd66b2d5222d1c6ba595c5313b2bdc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ee8e6ce466984b790362ecfb344195e = $(`<div id="html_9ee8e6ce466984b790362ecfb344195e" style="width: 100.0%; height: 100.0%;">Pearl Harbor–Hickam</div>`)[0];
+                popup_ebd66b2d5222d1c6ba595c5313b2bdc9.setContent(html_9ee8e6ce466984b790362ecfb344195e);
+            
+        
+
+        marker_85636f218d2460a6eb532b3370cd6685.bindPopup(popup_ebd66b2d5222d1c6ba595c5313b2bdc9)
+        ;
+
+        
+    
+    
+            marker_85636f218d2460a6eb532b3370cd6685.bindTooltip(
+                `<div>
+                     Pearl Harbor–Hickam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85636f218d2460a6eb532b3370cd6685.setIcon(icon_a9931c24c3bbc59929dcd805310943fa);
+            
+    
+            var circle_a741c01d6334127301d706c5712f381c = L.circle(
+                [35.08449090000005, -106.6511367000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_6a3c5bb1769b10360d0b8e0838ea051b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0438207fe0f4e26c5740951d305b36f0 = $(`<div id="html_0438207fe0f4e26c5740951d305b36f0" style="width: 100.0%; height: 100.0%;">Target #1 — 76 pts<br>Nearest base: Kirtland AFB (Albuquerque)<br>Distance: 6.9 km</div>`)[0];
+                popup_6a3c5bb1769b10360d0b8e0838ea051b.setContent(html_0438207fe0f4e26c5740951d305b36f0);
+            
+        
+
+        circle_a741c01d6334127301d706c5712f381c.bindPopup(popup_6a3c5bb1769b10360d0b8e0838ea051b)
+        ;
+
+        
+    
+    
+            circle_a741c01d6334127301d706c5712f381c.bindTooltip(
+                `<div>
+                     Target #1 — 6.9 km to Kirtland AFB (Albuquerque)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd8c3413578d310ba45252fdebb88195 = L.circleMarker(
+                [35.08449090000005, -106.6511367000001],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_a7d394afb3f8e8c32e851767a7f1ab64 = L.marker(
+                [35.08449090000005, -106.6511367000001],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_00efff72a54791d1f0a52a215ccaadbe = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e1\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_a7d394afb3f8e8c32e851767a7f1ab64.setIcon(div_icon_00efff72a54791d1f0a52a215ccaadbe);
+            
+    
+            var circle_35dc153b798e80d681a7f42b9e45faf6 = L.circle(
+                [21.312507124691372, -157.86321372962976],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_617b4f351983eb3d8c9e9c72fc3c3878 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2af28add25d2acf11f8dddeb85218fc = $(`<div id="html_e2af28add25d2acf11f8dddeb85218fc" style="width: 100.0%; height: 100.0%;">Target #2 — 74 pts<br>Nearest base: Pearl Harbor–Hickam<br>Distance: 8.3 km</div>`)[0];
+                popup_617b4f351983eb3d8c9e9c72fc3c3878.setContent(html_e2af28add25d2acf11f8dddeb85218fc);
+            
+        
+
+        circle_35dc153b798e80d681a7f42b9e45faf6.bindPopup(popup_617b4f351983eb3d8c9e9c72fc3c3878)
+        ;
+
+        
+    
+    
+            circle_35dc153b798e80d681a7f42b9e45faf6.bindTooltip(
+                `<div>
+                     Target #2 — 8.3 km to Pearl Harbor–Hickam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21e749cdad5d16234e5956d6ed8f056b = L.circleMarker(
+                [21.312507124691372, -157.86321372962976],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_e1ee1bc418891fa3216851b69788ef0d = L.marker(
+                [21.312507124691372, -157.86321372962976],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_67aa71e05c66e6c6ffbd7d490c63ec3d = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e2\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_e1ee1bc418891fa3216851b69788ef0d.setIcon(div_icon_67aa71e05c66e6c6ffbd7d490c63ec3d);
+            
+    
+            var circle_b3c0011ebfdbb92a10f67e347d2f60c4 = L.circle(
+                [21.37780984137931, -158.00304513448276],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_b6fc586877280820068954205ffd2c3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f8c75f4a27e40147d73193d679a9751 = $(`<div id="html_2f8c75f4a27e40147d73193d679a9751" style="width: 100.0%; height: 100.0%;">Target #3 — 29 pts<br>Nearest base: Pearl Harbor–Hickam<br>Distance: 8.4 km</div>`)[0];
+                popup_b6fc586877280820068954205ffd2c3b.setContent(html_2f8c75f4a27e40147d73193d679a9751);
+            
+        
+
+        circle_b3c0011ebfdbb92a10f67e347d2f60c4.bindPopup(popup_b6fc586877280820068954205ffd2c3b)
+        ;
+
+        
+    
+    
+            circle_b3c0011ebfdbb92a10f67e347d2f60c4.bindTooltip(
+                `<div>
+                     Target #3 — 8.4 km to Pearl Harbor–Hickam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9621ec9b2c3f550072189002b359c591 = L.circleMarker(
+                [21.37780984137931, -158.00304513448276],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_c589c275c9be97995934db10b7292b32 = L.marker(
+                [21.37780984137931, -158.00304513448276],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_3b4eb5caa157b536feba83c3ec52041b = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e3\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_c589c275c9be97995934db10b7292b32.setIcon(div_icon_3b4eb5caa157b536feba83c3ec52041b);
+            
+    
+            var circle_6b33d29809881512ab36e98cb13b09ee = L.circle(
+                [40.06552463300965, -74.39430641553405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_c4e7da9abd0682ba456ef5894fbb37eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1e65ee92994eeaa01b159d8db542794 = $(`<div id="html_c1e65ee92994eeaa01b159d8db542794" style="width: 100.0%; height: 100.0%;">Target #4 — 88 pts<br>Nearest base: McGuire AFB<br>Distance: 17.3 km</div>`)[0];
+                popup_c4e7da9abd0682ba456ef5894fbb37eb.setContent(html_c1e65ee92994eeaa01b159d8db542794);
+            
+        
+
+        circle_6b33d29809881512ab36e98cb13b09ee.bindPopup(popup_c4e7da9abd0682ba456ef5894fbb37eb)
+        ;
+
+        
+    
+    
+            circle_6b33d29809881512ab36e98cb13b09ee.bindTooltip(
+                `<div>
+                     Target #4 — 17.3 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01ab21cfca25578002eaf5714704579a = L.circleMarker(
+                [40.06552463300965, -74.39430641553405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_82d0162dbfd140919bea737af499fd90 = L.marker(
+                [40.06552463300965, -74.39430641553405],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_7a292ae0b95c99b2872782adde140aae = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e4\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_82d0162dbfd140919bea737af499fd90.setIcon(div_icon_7a292ae0b95c99b2872782adde140aae);
+            
+    
+            var circle_57c7c25efd473d03baa0696698f1af68 = L.circle(
+                [41.25352750000007, -95.9993827781608],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_8ec1035e1bece0ca85acaed16341a121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_997be5a031bb8b78f528b44c3eacf60c = $(`<div id="html_997be5a031bb8b78f528b44c3eacf60c" style="width: 100.0%; height: 100.0%;">Target #5 — 181 pts<br>Nearest base: Offutt AFB<br>Distance: 17.4 km</div>`)[0];
+                popup_8ec1035e1bece0ca85acaed16341a121.setContent(html_997be5a031bb8b78f528b44c3eacf60c);
+            
+        
+
+        circle_57c7c25efd473d03baa0696698f1af68.bindPopup(popup_8ec1035e1bece0ca85acaed16341a121)
+        ;
+
+        
+    
+    
+            circle_57c7c25efd473d03baa0696698f1af68.bindTooltip(
+                `<div>
+                     Target #5 — 17.4 km to Offutt AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cfba808bbaafa017056b476b5ad0c1d = L.circleMarker(
+                [41.25352750000007, -95.9993827781608],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_5a52f61987a616bc8acb25329dcc6dd9 = L.marker(
+                [41.25352750000007, -95.9993827781608],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_d85aa63d16cbd9a8c0c0baf65a737d9b = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e5\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_5a52f61987a616bc8acb25329dcc6dd9.setIcon(div_icon_d85aa63d16cbd9a8c0c0baf65a737d9b);
+            
+    
+            var circle_04b3506b4390316e40df924d16fedd62 = L.circle(
+                [40.02199696666666, -74.82683838666668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_ad90f17c5a42ea500338c3440b8d27a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_063bc8a295e5176969f1e9d75153e9bf = $(`<div id="html_063bc8a295e5176969f1e9d75153e9bf" style="width: 100.0%; height: 100.0%;">Target #6 — 17 pts<br>Nearest base: McGuire AFB<br>Distance: 20.1 km</div>`)[0];
+                popup_ad90f17c5a42ea500338c3440b8d27a1.setContent(html_063bc8a295e5176969f1e9d75153e9bf);
+            
+        
+
+        circle_04b3506b4390316e40df924d16fedd62.bindPopup(popup_ad90f17c5a42ea500338c3440b8d27a1)
+        ;
+
+        
+    
+    
+            circle_04b3506b4390316e40df924d16fedd62.bindTooltip(
+                `<div>
+                     Target #6 — 20.1 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_182a6c5c5c4200b00e9cc5a86de147aa = L.circleMarker(
+                [40.02199696666666, -74.82683838666668],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_85bcb82abdc2f8879e683d55978f2439 = L.marker(
+                [40.02199696666666, -74.82683838666668],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_086b36fa8ad384d66ef300caa96364d6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e6\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_85bcb82abdc2f8879e683d55978f2439.setIcon(div_icon_086b36fa8ad384d66ef300caa96364d6);
+            
+    
+            var circle_8f2e02ff520a460741909942bb7b66b4 = L.circle(
+                [40.11314388000001, -74.30160226499999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_532de54c2ff7277c0f1b2dd67edae7cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc6b5885fa6cb3f869f8fcf23cf92f4f = $(`<div id="html_dc6b5885fa6cb3f869f8fcf23cf92f4f" style="width: 100.0%; height: 100.0%;">Target #7 — 20 pts<br>Nearest base: McGuire AFB<br>Distance: 26.5 km</div>`)[0];
+                popup_532de54c2ff7277c0f1b2dd67edae7cc.setContent(html_dc6b5885fa6cb3f869f8fcf23cf92f4f);
+            
+        
+
+        circle_8f2e02ff520a460741909942bb7b66b4.bindPopup(popup_532de54c2ff7277c0f1b2dd67edae7cc)
+        ;
+
+        
+    
+    
+            circle_8f2e02ff520a460741909942bb7b66b4.bindTooltip(
+                `<div>
+                     Target #7 — 26.5 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ce18b26b674e6d5d94e0ae04933fc85 = L.circleMarker(
+                [40.11314388000001, -74.30160226499999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_c40306b5657786fee165bc12624572c7 = L.marker(
+                [40.11314388000001, -74.30160226499999],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_454e12c45db22046605f5c724edd9cd8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e7\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_c40306b5657786fee165bc12624572c7.setIcon(div_icon_454e12c45db22046605f5c724edd9cd8);
+            
+    
+            var circle_aa20a5bd12789e557c6ee8dc1f62975f = L.circle(
+                [40.2194914022727, -74.79358449772737],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_87057de83143c1c38ea840a0e76fa741 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f27af66a02043e34182c3083aec3fb4 = $(`<div id="html_3f27af66a02043e34182c3083aec3fb4" style="width: 100.0%; height: 100.0%;">Target #8 — 45 pts<br>Nearest base: McGuire AFB<br>Distance: 27.6 km</div>`)[0];
+                popup_87057de83143c1c38ea840a0e76fa741.setContent(html_3f27af66a02043e34182c3083aec3fb4);
+            
+        
+
+        circle_aa20a5bd12789e557c6ee8dc1f62975f.bindPopup(popup_87057de83143c1c38ea840a0e76fa741)
+        ;
+
+        
+    
+    
+            circle_aa20a5bd12789e557c6ee8dc1f62975f.bindTooltip(
+                `<div>
+                     Target #8 — 27.6 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6017795ea3fce7687d1aa33c6fbf5ccf = L.circleMarker(
+                [40.2194914022727, -74.79358449772737],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_2e3298c16dcc5ce1f879bdf26d792043 = L.marker(
+                [40.2194914022727, -74.79358449772737],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_c6b78860962e56d285b380c427830656 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e8\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_2e3298c16dcc5ce1f879bdf26d792043.setIcon(div_icon_c6b78860962e56d285b380c427830656);
+            
+    
+            var circle_86e6fe735494abd037945ff5164282a0 = L.circle(
+                [40.11307317959184, -74.91828257142859],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_7d94a696493e3e6535da7c61aa027146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_564d6ba11950b2b4a6b69799a3a7e1c7 = $(`<div id="html_564d6ba11950b2b4a6b69799a3a7e1c7" style="width: 100.0%; height: 100.0%;">Target #9 — 40 pts<br>Nearest base: McGuire AFB<br>Distance: 29.5 km</div>`)[0];
+                popup_7d94a696493e3e6535da7c61aa027146.setContent(html_564d6ba11950b2b4a6b69799a3a7e1c7);
+            
+        
+
+        circle_86e6fe735494abd037945ff5164282a0.bindPopup(popup_7d94a696493e3e6535da7c61aa027146)
+        ;
+
+        
+    
+    
+            circle_86e6fe735494abd037945ff5164282a0.bindTooltip(
+                `<div>
+                     Target #9 — 29.5 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ad3e11cc7d0aea07f27b5bec4dbe9fd = L.circleMarker(
+                [40.11307317959184, -74.91828257142859],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_0f010d73cbc4f7eced9c4e6cd47048ce = L.marker(
+                [40.11307317959184, -74.91828257142859],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_3b0d6981f77310066db0541dd580712d = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e9\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_0f010d73cbc4f7eced9c4e6cd47048ce.setIcon(div_icon_3b0d6981f77310066db0541dd580712d);
+            
+    
+            var circle_1577d536e9be370da9b81af4bf904e53 = L.circle(
+                [40.28285985, -74.38514932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_c26a92571e90254136d0da0c9cfdcc46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e445ddf054747a3e31cc4ff1e9abb7 = $(`<div id="html_39e445ddf054747a3e31cc4ff1e9abb7" style="width: 100.0%; height: 100.0%;">Target #10 — 17 pts<br>Nearest base: McGuire AFB<br>Distance: 33.5 km</div>`)[0];
+                popup_c26a92571e90254136d0da0c9cfdcc46.setContent(html_39e445ddf054747a3e31cc4ff1e9abb7);
+            
+        
+
+        circle_1577d536e9be370da9b81af4bf904e53.bindPopup(popup_c26a92571e90254136d0da0c9cfdcc46)
+        ;
+
+        
+    
+    
+            circle_1577d536e9be370da9b81af4bf904e53.bindTooltip(
+                `<div>
+                     Target #10 — 33.5 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_288dd87c6ba2580a88bfcc83414f9adf = L.circleMarker(
+                [40.28285985, -74.38514932],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_c4dca4156a8c9ec81a4b07dabf3f06c9 = L.marker(
+                [40.28285985, -74.38514932],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_fbd95354604fb3008fcc200aa4414de4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e10\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_c4dca4156a8c9ec81a4b07dabf3f06c9.setIcon(div_icon_fbd95354604fb3008fcc200aa4414de4);
+            
+    
+            var circle_6a5705e6c0316481e7090163171d7364 = L.circle(
+                [39.923851567272756, -74.9900514081818],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_52ef628d1809e0e0565d1039ad107b3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa54f0d473ed4dbb9a1be0c869c9d526 = $(`<div id="html_aa54f0d473ed4dbb9a1be0c869c9d526" style="width: 100.0%; height: 100.0%;">Target #11 — 107 pts<br>Nearest base: McGuire AFB<br>Distance: 35.8 km</div>`)[0];
+                popup_52ef628d1809e0e0565d1039ad107b3c.setContent(html_aa54f0d473ed4dbb9a1be0c869c9d526);
+            
+        
+
+        circle_6a5705e6c0316481e7090163171d7364.bindPopup(popup_52ef628d1809e0e0565d1039ad107b3c)
+        ;
+
+        
+    
+    
+            circle_6a5705e6c0316481e7090163171d7364.bindTooltip(
+                `<div>
+                     Target #11 — 35.8 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95b386cde3ee0402df60af28fe50d135 = L.circleMarker(
+                [39.923851567272756, -74.9900514081818],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_de57251e82535dceed98a3d7443d2b60 = L.marker(
+                [39.923851567272756, -74.9900514081818],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_8c5e7d9ff54848233de6dec45a22cf30 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e11\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_de57251e82535dceed98a3d7443d2b60.setIcon(div_icon_8c5e7d9ff54848233de6dec45a22cf30);
+            
+    
+            var circle_dcd95b70d1604a9466ab7c9e7bb090ad = L.circle(
+                [39.94902331470586, -74.13781862941171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_84917ff6b746890a20315d9d0a663ea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_521d0bf7c0d329def7c760cd7dfc4b6b = $(`<div id="html_521d0bf7c0d329def7c760cd7dfc4b6b" style="width: 100.0%; height: 100.0%;">Target #12 — 32 pts<br>Nearest base: McGuire AFB<br>Distance: 39.5 km</div>`)[0];
+                popup_84917ff6b746890a20315d9d0a663ea4.setContent(html_521d0bf7c0d329def7c760cd7dfc4b6b);
+            
+        
+
+        circle_dcd95b70d1604a9466ab7c9e7bb090ad.bindPopup(popup_84917ff6b746890a20315d9d0a663ea4)
+        ;
+
+        
+    
+    
+            circle_dcd95b70d1604a9466ab7c9e7bb090ad.bindTooltip(
+                `<div>
+                     Target #12 — 39.5 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae1871fd1f7c7faa0377f912aa80d718 = L.circleMarker(
+                [39.94902331470586, -74.13781862941171],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_acfc403bb6303e1fb2452fa4e6e1b885 = L.marker(
+                [39.94902331470586, -74.13781862941171],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_3401b5b12620575f657bd33effff5b2a = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e12\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_acfc403bb6303e1fb2452fa4e6e1b885.setIcon(div_icon_3401b5b12620575f657bd33effff5b2a);
+            
+    
+            var circle_5eb66756c4dc023491d527ef5b76f3b8 = L.circle(
+                [40.11769857586208, -74.0630185689655],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_023a15cf2ed95f1a378c7f33f886dc36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb7b93492e34e03c369f871008811735 = $(`<div id="html_bb7b93492e34e03c369f871008811735" style="width: 100.0%; height: 100.0%;">Target #13 — 50 pts<br>Nearest base: McGuire AFB<br>Distance: 46.1 km</div>`)[0];
+                popup_023a15cf2ed95f1a378c7f33f886dc36.setContent(html_bb7b93492e34e03c369f871008811735);
+            
+        
+
+        circle_5eb66756c4dc023491d527ef5b76f3b8.bindPopup(popup_023a15cf2ed95f1a378c7f33f886dc36)
+        ;
+
+        
+    
+    
+            circle_5eb66756c4dc023491d527ef5b76f3b8.bindTooltip(
+                `<div>
+                     Target #13 — 46.1 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a2df94857c9543b987f9fd034fa8097 = L.circleMarker(
+                [40.11769857586208, -74.0630185689655],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_ae5c4e8bdefecfd493bfa735ed3cd0ac = L.marker(
+                [40.11769857586208, -74.0630185689655],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_dd2aaa566c76ad7f09c3d4bbc0d5d1db = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e13\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_ae5c4e8bdefecfd493bfa735ed3cd0ac.setIcon(div_icon_dd2aaa566c76ad7f09c3d4bbc0d5d1db);
+            
+    
+            var circle_013c13e78eb1270a56e156fb256a42a9 = L.circle(
+                [39.703437307142856, -74.95332931428572],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_626c8ceee46dd800e6598981e0f0b42b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd97547da8a481d6c093e610c18a1979 = $(`<div id="html_bd97547da8a481d6c093e610c18a1979" style="width: 100.0%; height: 100.0%;">Target #14 — 18 pts<br>Nearest base: McGuire AFB<br>Distance: 47.3 km</div>`)[0];
+                popup_626c8ceee46dd800e6598981e0f0b42b.setContent(html_bd97547da8a481d6c093e610c18a1979);
+            
+        
+
+        circle_013c13e78eb1270a56e156fb256a42a9.bindPopup(popup_626c8ceee46dd800e6598981e0f0b42b)
+        ;
+
+        
+    
+    
+            circle_013c13e78eb1270a56e156fb256a42a9.bindTooltip(
+                `<div>
+                     Target #14 — 47.3 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17454a7272e53e704b70f49473593268 = L.circleMarker(
+                [39.703437307142856, -74.95332931428572],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_8755d4d3ca90e20a81ad557964f49187 = L.marker(
+                [39.703437307142856, -74.95332931428572],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_c47390362ee9b78d355e7e9634965eff = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e14\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_8755d4d3ca90e20a81ad557964f49187.setIcon(div_icon_c47390362ee9b78d355e7e9634965eff);
+            
+    
+            var circle_996adeb20bff3ac512cc9dccb7650b10 = L.circle(
+                [40.16865105833332, -75.11999068055557],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_54b1cd2d8f2ebe4ad1139cf90e439820 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caebf809db94b3a01afba01bd87340ee = $(`<div id="html_caebf809db94b3a01afba01bd87340ee" style="width: 100.0%; height: 100.0%;">Target #15 — 33 pts<br>Nearest base: McGuire AFB<br>Distance: 47.7 km</div>`)[0];
+                popup_54b1cd2d8f2ebe4ad1139cf90e439820.setContent(html_caebf809db94b3a01afba01bd87340ee);
+            
+        
+
+        circle_996adeb20bff3ac512cc9dccb7650b10.bindPopup(popup_54b1cd2d8f2ebe4ad1139cf90e439820)
+        ;
+
+        
+    
+    
+            circle_996adeb20bff3ac512cc9dccb7650b10.bindTooltip(
+                `<div>
+                     Target #15 — 47.7 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4c06ea6de200a05421a3b62926fdcfa = L.circleMarker(
+                [40.16865105833332, -75.11999068055557],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_7c9b6637e17c12b12a1a2ca4854c998c = L.marker(
+                [40.16865105833332, -75.11999068055557],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_4263fe4cc2b3b062247c89c91294023c = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e15\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_7c9b6637e17c12b12a1a2ca4854c998c.setIcon(div_icon_4263fe4cc2b3b062247c89c91294023c);
+            
+    
+            var circle_963e9265002225a1c50c21125e8e7ce2 = L.circle(
+                [39.85636094473684, -75.11196706578933],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_446ad1443072ef7847f60571057b1cbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c77c8f970c53a9b8af446926c9fac9ff = $(`<div id="html_c77c8f970c53a9b8af446926c9fac9ff" style="width: 100.0%; height: 100.0%;">Target #16 — 65 pts<br>Nearest base: McGuire AFB<br>Distance: 48.2 km</div>`)[0];
+                popup_446ad1443072ef7847f60571057b1cbe.setContent(html_c77c8f970c53a9b8af446926c9fac9ff);
+            
+        
+
+        circle_963e9265002225a1c50c21125e8e7ce2.bindPopup(popup_446ad1443072ef7847f60571057b1cbe)
+        ;
+
+        
+    
+    
+            circle_963e9265002225a1c50c21125e8e7ce2.bindTooltip(
+                `<div>
+                     Target #16 — 48.2 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09f0da39b7eac1de36971edeba4b04f8 = L.circleMarker(
+                [39.85636094473684, -75.11196706578933],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_ee2fceda45bd9e7d3a81ce72c2ad5510 = L.marker(
+                [39.85636094473684, -75.11196706578933],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_f425e8b1a5fa036fc07cf55dfcbd15b8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e16\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_ee2fceda45bd9e7d3a81ce72c2ad5510.setIcon(div_icon_f425e8b1a5fa036fc07cf55dfcbd15b8);
+            
+    
+            var circle_027497c8d84f74e2b6b449ccf3d4d3a4 = L.circle(
+                [39.95168037300773, -75.16273592391683],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_2919fb781bc9df7f6084cae7641f1aba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_732a8c5f7a20ed8ebda7e86f09cd5bca = $(`<div id="html_732a8c5f7a20ed8ebda7e86f09cd5bca" style="width: 100.0%; height: 100.0%;">Target #17 — 870 pts<br>Nearest base: McGuire AFB<br>Distance: 49.4 km</div>`)[0];
+                popup_2919fb781bc9df7f6084cae7641f1aba.setContent(html_732a8c5f7a20ed8ebda7e86f09cd5bca);
+            
+        
+
+        circle_027497c8d84f74e2b6b449ccf3d4d3a4.bindPopup(popup_2919fb781bc9df7f6084cae7641f1aba)
+        ;
+
+        
+    
+    
+            circle_027497c8d84f74e2b6b449ccf3d4d3a4.bindTooltip(
+                `<div>
+                     Target #17 — 49.4 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ef8916551bfbfe90602394718f999ec = L.circleMarker(
+                [39.95168037300773, -75.16273592391683],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_e59fd8d1b53bbe74ea9a0fc265a1c00d = L.marker(
+                [39.95168037300773, -75.16273592391683],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_f35aff0468c72d38dd88f0d54cd1e024 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e17\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_e59fd8d1b53bbe74ea9a0fc265a1c00d.setIcon(div_icon_f35aff0468c72d38dd88f0d54cd1e024);
+            
+    
+            var circle_af0e968404df21c28e800c12b3610568 = L.circle(
+                [31.968598800000024, -99.90181309999991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_c8cac30801a6265b039481fafd5823fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc891be2a5270338498366cfddbce244 = $(`<div id="html_bc891be2a5270338498366cfddbce244" style="width: 100.0%; height: 100.0%;">Target #18 — 42 pts<br>Nearest base: Dyess AFB<br>Distance: 49.9 km</div>`)[0];
+                popup_c8cac30801a6265b039481fafd5823fe.setContent(html_bc891be2a5270338498366cfddbce244);
+            
+        
+
+        circle_af0e968404df21c28e800c12b3610568.bindPopup(popup_c8cac30801a6265b039481fafd5823fe)
+        ;
+
+        
+    
+    
+            circle_af0e968404df21c28e800c12b3610568.bindTooltip(
+                `<div>
+                     Target #18 — 49.9 km to Dyess AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_215b4cbcef5dd73361c9a59d83402b69 = L.circleMarker(
+                [31.968598800000024, -99.90181309999991],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_450e42cda98bd1578944727a71eebdad = L.marker(
+                [31.968598800000024, -99.90181309999991],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_a1d5d65ae6afe302fd9568e79f7fdde9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e18\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_450e42cda98bd1578944727a71eebdad.setIcon(div_icon_a1d5d65ae6afe302fd9568e79f7fdde9);
+            
+    
+            var circle_88023cd07a696b70f90a81b94486c25c = L.circle(
+                [40.48887518959528, -74.42261149017344],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_4d64f9247c0f18bfbbe1d206dbe6a622 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_059eff4158df7545fed85da880ae5f87 = $(`<div id="html_059eff4158df7545fed85da880ae5f87" style="width: 100.0%; height: 100.0%;">Target #19 — 177 pts<br>Nearest base: McGuire AFB<br>Distance: 53.5 km</div>`)[0];
+                popup_4d64f9247c0f18bfbbe1d206dbe6a622.setContent(html_059eff4158df7545fed85da880ae5f87);
+            
+        
+
+        circle_88023cd07a696b70f90a81b94486c25c.bindPopup(popup_4d64f9247c0f18bfbbe1d206dbe6a622)
+        ;
+
+        
+    
+    
+            circle_88023cd07a696b70f90a81b94486c25c.bindTooltip(
+                `<div>
+                     Target #19 — 53.5 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2dfb390fb5226c0674379bc67a80427a = L.circleMarker(
+                [40.48887518959528, -74.42261149017344],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_d79026be02df7695de69fa0bef6dca05 = L.marker(
+                [40.48887518959528, -74.42261149017344],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_721b8186ccbcefffeecff4878a340e3b = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e19\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_d79026be02df7695de69fa0bef6dca05.setIcon(div_icon_721b8186ccbcefffeecff4878a340e3b);
+            
+    
+            var circle_b6fe76b5bb494a3417b48c959c05a713 = L.circle(
+                [40.29540838000001, -75.11667449333336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+        var popup_ab3a68009d24cebb9e3bb8d305ffd955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d682b7744b764e63c64cb3c478e6b078 = $(`<div id="html_d682b7744b764e63c64cb3c478e6b078" style="width: 100.0%; height: 100.0%;">Target #20 — 24 pts<br>Nearest base: McGuire AFB<br>Distance: 53.8 km</div>`)[0];
+                popup_ab3a68009d24cebb9e3bb8d305ffd955.setContent(html_d682b7744b764e63c64cb3c478e6b078);
+            
+        
+
+        circle_b6fe76b5bb494a3417b48c959c05a713.bindPopup(popup_ab3a68009d24cebb9e3bb8d305ffd955)
+        ;
+
+        
+    
+    
+            circle_b6fe76b5bb494a3417b48c959c05a713.bindTooltip(
+                `<div>
+                     Target #20 — 53.8 km to McGuire AFB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8538e6ce73abc7c98e5237ca113be976 = L.circleMarker(
+                [40.29540838000001, -75.11667449333336],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var marker_e44fbf8a31d58f26bf45bf67d39d048c = L.marker(
+                [40.29540838000001, -75.11667449333336],
+                {
+}
+            ).addTo(map_06aa5dcf65af5da936ace96d0a13bf5f);
+        
+    
+            var div_icon_769d64bc6f8d342af14509201e9de2f5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-weight:800;font-size:14px;color:red\"\u003e20\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+                marker_e44fbf8a31d58f26bf45bf67d39d048c.setIcon(div_icon_769d64bc6f8d342af14509201e9de2f5);
+            
+</script>
+</html>
